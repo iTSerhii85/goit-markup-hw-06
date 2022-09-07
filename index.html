@@ -563,6 +563,54 @@
             <use href="./images/sprite.svg#icon-X"></use>
           </svg>
         </button>
+        <form class="contact-form">
+          <p>Залиште свої дані, ми вам передзвонимо</p>
+            <div class="field">
+              <label for="user-name" class="form-label">Ім'я</label>
+              <input
+                required
+                type="text"
+                name="user-name"
+                id="user-name"
+                class="forms user-info"
+              />
+            </div>
+            <div class="field">
+              <label for="user-tel" class="form-label">Телефон</label>
+              <input
+                required
+                type="tel"
+                name="user-tel"
+                id="user-tel"
+                class="forms user-info"
+              />
+            </div>
+            <div class="field">
+              <label for="user-male" class="form-label">Пошта</label>
+              <input
+                required
+                type="emale"
+                name="user-male"
+                id="user-male"
+                class="forms user-info"
+              />
+            </div>
+            <div class="field-area">
+              <label for="coment" class="form-label">Коментар</label>
+              <textarea
+                placeholder="Введіть текст"
+                name="coment"
+                id="coment"
+                class="forms coment-area"
+              ></textarea>
+            </div>
+          <label class="agreement-label">
+            <input type="checkbox" />
+            Погоджуюся з розсилкою та приймаю 
+            <a href="#">Умови договору</a>
+          </label>
+          <button type="submit" class="submit-button">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
