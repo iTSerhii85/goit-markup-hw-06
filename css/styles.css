@@ -641,6 +641,7 @@ img {
   padding: 40px;
 }
 .forms {
+  display: block;
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -668,7 +669,6 @@ img {
   color: rgba(117, 117, 117, 0.5);
 
   resize: none;
-
 }
 .field-area {
   margin-bottom: 20px;
@@ -677,6 +677,13 @@ img {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
+  margin-bottom: 30px;
+
+  display: block;
+  align-items: center;
+  text-align: center;
+  
+  width: 100%;
 }
 .checkbox {
 }
@@ -701,7 +708,8 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
-  margin-top: 30px;
+
   margin-left: auto;
   margin-right: auto;
+  cursor: pointer;
 }
