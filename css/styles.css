@@ -503,7 +503,7 @@ img {
   margin-left: auto;
 }
 /* Кнопка футера */
-.footer-button {
+.footer-key {
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
@@ -516,16 +516,14 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
-}
-.footer-label {
-  display: flex;
-}
-.footer-button {
   display: flex;
   justify-content: center;
   align-items: center;
 
   margin-left: 12px;
+}
+.footer-label {
+  display: flex;
 }
 .footer-send-icon {
   margin-left: 10px;
