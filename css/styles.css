@@ -667,6 +667,14 @@ img {
   border-radius: 50%;
   background-color: #fff;
   padding: 0;
+  cursor: pointer;
+}
+.modal-close{
+  fill: #000000;
+  transition: fill var(--transition-time-cubic);
+}
+.modal-button:hover .modal-close {
+  fill: var(--accent-color);
 }
 .backdrop.is-hidden {
   visibility: hidden;
