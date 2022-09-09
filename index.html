@@ -556,7 +556,12 @@
         <form class="footer-mail">
           <p class="footer-title">Підпишіться на розсилку</p>
           <label class="footer-label">
-            <input type="email" class="footer-input" placeholder="E-mail" required>
+            <input
+              type="email"
+              class="footer-input"
+              placeholder="E-mail"
+              required
+            />
             <button class="footer-button" type="submit">
               Підписатися
               <svg class="footer-send-icon" width="24" height="24">
@@ -577,48 +582,51 @@
         </button>
         <form class="contact-form">
           <p>Залиште свої дані, ми вам передзвонимо</p>
-            <div class="field">
-              <label for="user-name" class="form-label">Ім'я</label>
-              <input
-                required
-                type="text"
-                name="user-name"
-                id="user-name"
-                class="forms user-info"
-              />
-            </div>
-            <div class="field">
-              <label for="user-tel" class="form-label">Телефон</label>
-              <input
-                required
-                type="tel"
-                name="user-tel"
-                id="user-tel"
-                class="forms user-info"
-              />
-            </div>
-            <div class="field">
-              <label for="user-male" class="form-label">Пошта</label>
-              <input
-                required
-                type="emale"
-                name="user-male"
-                id="user-male"
-                class="forms user-info"
-              />
-            </div>
-            <div class="field-area">
-              <label for="coment" class="form-label">Коментар</label>
-              <textarea
-                placeholder="Введіть текст"
-                name="coment"
-                id="coment"
-                class="forms coment-area"
-              ></textarea>
-            </div>
+          <div class="field">
+            <label for="user-name" class="form-label">Ім'я</label>
+            <input
+              required
+              type="text"
+              name="user-name"
+              id="user-name"
+              class="forms user-info"
+            />
+          </div>
+          <div class="field">
+            <label for="user-tel" class="form-label">Телефон</label>
+            <input
+              required
+              type="tel"
+              name="user-tel"
+              id="user-tel"
+              class="forms user-info"
+            />
+          </div>
+          <div class="field">
+            <label for="user-male" class="form-label">Пошта</label>
+            <input
+              required
+              type="emale"
+              name="user-male"
+              id="user-male"
+              class="forms user-info"
+            />
+          </div>
+          <div class="field-area">
+            <label for="coment" class="form-label">Коментар</label>
+            <textarea
+              placeholder="Введіть текст"
+              name="coment"
+              id="coment"
+              class="forms coment-area"
+            ></textarea>
+          </div>
           <label class="agreement-label">
-            <input type="checkbox" />
-            Погоджуюся з розсилкою та приймаю 
+            <input type="checkbox" class="form-check" name="user-policy" required/>
+            <svg class="check">
+              <use class="icon-check" href="./images/sprite.svg#icon-check"></use>
+            </svg>
+            Погоджуюся з розсилкою та приймаю&nbsp
             <a href="#">Умови договору</a>
           </label>
           <button type="submit" class="submit-button">Відправити</button>
