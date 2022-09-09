@@ -495,7 +495,7 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-input:focus {
-  border-color:  var(--accent-color);
+  border-color: var(--accent-color);
   outline: none;
 }
 .footer-mail {
@@ -517,7 +517,7 @@ img {
   border-radius: 4px;
   cursor: pointer;
 }
-.footer-label{
+.footer-label {
   display: flex;
 }
 .footer-button {
@@ -779,13 +779,13 @@ img {
 }
 .form-check:checked + .check {
   background-color: var(--accent-color);
-  border:2px solid var(--accent-color);
+  border: 2px solid var(--accent-color);
 }
 .form-check:checked + .check .icon-check {
   display: block;
 }
 .form-check:focus + .check {
-  border:2px solid var(--accent-color);
+  border: 2px solid var(--accent-color);
 }
 .form-check {
   position: absolute;
@@ -818,5 +818,5 @@ img {
 }
 .submit-button:hover,
 .submit-button:focus {
-  background-color: #188CE8;
+  background-color: #188ce8;
 }
