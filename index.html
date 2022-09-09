@@ -561,6 +561,7 @@
               class="footer-input"
               placeholder="E-mail"
               required
+              name="user-mail-for-sing"
             />
             <button class="footer-button" type="submit">
               Підписатися
@@ -584,40 +585,57 @@
           <p>Залиште свої дані, ми вам передзвонимо</p>
           <div class="field">
             <label for="user-name" class="form-label">Ім'я</label>
-            <input
-              required
-              type="text"
-              name="user-name"
-              id="user-name"
-              class="forms user-info"
-            />
+            <span class="for-icon">
+              <input
+                required
+                pattern="[a-zA-Zа-яА-ЯіІїЇ`ʼ]+"
+                type="text"
+                name="user-name"
+                id="user-name"
+                class="forms user-info"
+              />
+              <svg class="icon-forms" width="18" height="18">
+                <use href="./images/sprite.svg#icon-person-black"></use>
+              </svg>
+            </span>
           </div>
           <div class="field">
             <label for="user-tel" class="form-label">Телефон</label>
-            <input
-              required
-              type="tel"
-              name="user-tel"
-              id="user-tel"
-              class="forms user-info"
-            />
+            <span class="for-icon">
+              <input
+                required
+                pattern="[0-9]{10}"
+                type="tel"
+                name="user-tel"
+                id="user-tel"
+                class="forms user-info"
+              />
+              <svg class="icon-forms" width="18" height="18">
+                <use href="./images/sprite.svg#icon-phone-black"></use>
+              </svg>
+            </span>
           </div>
           <div class="field">
-            <label for="user-male" class="form-label">Пошта</label>
-            <input
-              required
-              type="emale"
-              name="user-male"
-              id="user-male"
-              class="forms user-info"
-            />
+            <label for="user-mail" class="form-label">Пошта</label>
+            <span class="for-icon">
+              <input
+                required
+                type="email"
+                name="user-mail"
+                id="user-mail"
+                class="forms user-info"
+              />
+              <svg class="icon-forms" width="18" height="18">
+                <use href="./images/sprite.svg#icon-email-black"></use>
+              </svg>
+            </span>
           </div>
           <div class="field-area">
-            <label for="coment" class="form-label">Коментар</label>
+            <label for="user-coment" class="form-label">Коментар</label>
             <textarea
               placeholder="Введіть текст"
-              name="coment"
-              id="coment"
+              name="user-coment"
+              id="user-coment"
               class="forms coment-area"
             ></textarea>
           </div>

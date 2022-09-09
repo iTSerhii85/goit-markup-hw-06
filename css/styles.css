@@ -481,15 +481,22 @@ img {
 .footer-input {
   width: 358px;
   height: 50px;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.03em;
-
-  color: rgba(255, 255, 255, 0.6);
+  color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: var(--background-color-footer);
   padding: 15px 16px;
+  transition: border-color var(--transition-time-cubic);
+}
+.footer-input::placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-input:focus {
+  border-color:  var(--accent-color);
+  outline: none;
 }
 .footer-mail {
   margin-right: 0;
@@ -672,6 +679,10 @@ img {
   transform: translate(-50%, -50%) scale(0.5);
 }
 /* Формы модалки */
+.for-icon {
+  display: block;
+  position: relative;
+}
 .contact-form > p {
   font-weight: 700;
   font-size: 20px;
@@ -690,6 +701,7 @@ img {
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  transition: border-color var(--transition-time-cubic);
 }
 .forms:focus {
   outline: none;
@@ -697,6 +709,7 @@ img {
 }
 .user-info {
   height: 40px;
+  padding-left: 42px;
 }
 .field {
   margin-bottom: 10px;
@@ -723,6 +736,18 @@ img {
   margin-bottom: 20px;
 }
 
+.icon-forms {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: #212121;
+  transition: fill var(--transition-time-cubic);
+}
+.user-info:focus + .icon-forms {
+  fill: var(--accent-color);
+}
+
 /* Чекбокс  модалки*/
 .agreement-label {
   font-size: 14px;
@@ -746,6 +771,7 @@ img {
   cursor: pointer;
 
   margin-right: 7px;
+  transition: background-color var(--transition-time-cubic);
 }
 .icon-check {
   display: none;
@@ -788,4 +814,9 @@ img {
   margin-left: auto;
   margin-right: auto;
   cursor: pointer;
+  transition: background-color var(--transition-time-cubic);
+}
+.submit-button:hover,
+.submit-button:focus {
+  background-color: #188CE8;
 }
